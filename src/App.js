@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import StateUse from './components/stateUse';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <div className="App">
+        <h3>Hooks Explained</h3>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hooks provide a way to manage component state and perform side effects
+          such as fetching data from an API or subscribing to events, without
+          writing class components.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <p>
+          Here we are going to explore Built in Hooks like useState, useEffect,
+          useContext, useMemo, useReducer, useRef and useCallback.
+        </p>
+        <StateUse />
+      </div>
+    </>
   );
 }
 
